@@ -54,6 +54,7 @@ Common kubectl commands
 Hands-on: Local cluster + first Pod
 
 WEEK 2: WORKLOAD MANAGEMENT (Days 8–14)
+
 Day 8 - ReplicaSets & Deployments
 Why Pods are not enough
 ReplicaSet role
@@ -105,6 +106,7 @@ StorageClasses
 Hands-on: Stateful app with PVC
 
 WEEK 3: SECURITY, SCALING & OBSERVABILITY (Days 15–21)
+
 Day 15 - Kubernetes Security Fundamentals
 Shared responsibility model
 Cluster attack surface
@@ -153,6 +155,7 @@ Node issues
 Hands-on: Real-world failures
 
 WEEK 4: PRODUCTION, CI/CD & ADVANCED TOPICS (Days 22–30)
+
 Day 22 - Helm (Package Manager for Kubernetes)
 Why Helm exists
 Chart structure
