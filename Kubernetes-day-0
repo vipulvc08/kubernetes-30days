@@ -1,0 +1,217 @@
+WEEK 1: ORIGIN, BASICS & CORE CONCEPTS (Days 1–7)
+
+Day 1 - Why Kubernetes Exists (The Story)
+Traditional monolithic deployments
+Problems with VM-based deployments
+Rise of containers and Docker
+Container orchestration problem
+Google Borg → Kubernetes origin
+CNCF and Kubernetes ecosystem
+Outcome: Viewer understands why Kubernetes was needed
+
+Day 2 - Kubernetes High-Level Architecture
+What Kubernetes is and what it is not
+Cluster overview
+Control Plane vs Worker Nodes
+Declarative vs imperative systems
+Desired state management
+Outcome: Conceptual mental model
+
+Day 3 - Kubernetes Components (Control Plane Deep Dive)
+API Server
+etcd
+Scheduler
+Controller Manager
+Cloud Controller Manager
+Outcome: Understand decision-making in Kubernetes
+
+Day 4 - Worker Node Components
+kubelet
+kube-proxy
+Container Runtime (containerd)
+Pod lifecycle on a node
+Outcome: How workloads actually run
+
+Day 5 - Kubernetes Objects Overview
+What is an object
+YAML anatomy
+metadata, spec, status
+Labels & annotations
+Outcome: Read and understand any YAML
+
+Day 6 - Pods (Core Building Block)
+What is a Pod
+Single vs multi-container Pods
+Pod networking basics
+Pod lifecycle
+Hands-on: Create and delete Pods
+
+Day 7 - kubectl & Cluster Setup
+kubectl basics
+minikube / kind / EKS overview
+kubeconfig
+Common kubectl commands
+Hands-on: Local cluster + first Pod
+
+WEEK 2: WORKLOAD MANAGEMENT (Days 8–14)
+Day 8 - ReplicaSets & Deployments
+Why Pods are not enough
+ReplicaSet role
+Deployment architecture
+Rolling updates
+Hands-on: Deploy a sample app
+
+Day 9 - Deployment Strategies
+Rolling update
+Recreate
+Canary (intro)
+Blue-Green (intro)
+Hands-on: Deployment rollout and rollback
+
+Day 10 - Services & Networking Basics
+Pod IP problem
+ClusterIP, NodePort, LoadBalancer
+kube-proxy
+Service discovery
+Hands-on: Expose an application
+
+Day 11 - Ingress & Ingress Controllers
+Why Ingress exists
+Ingress vs LoadBalancer
+NGINX Ingress Controller
+Path-based routing
+Hands-on: Expose app via Ingress
+
+Day 12 - Namespaces & Resource Isolation
+Namespace use cases
+Multi-tenant clusters
+ResourceQuotas
+LimitRanges
+Hands-on: Namespace-based isolation
+
+Day 13 - ConfigMaps & Secrets
+Config vs code
+Environment variables
+Volume-mounted configs
+Secret management basics
+Hands-on: Externalize config
+
+Day 14 - Volumes & Persistent Storage
+Ephemeral vs persistent storage
+Volumes
+PersistentVolumes (PV)
+PersistentVolumeClaims (PVC)
+StorageClasses
+Hands-on: Stateful app with PVC
+
+WEEK 3: SECURITY, SCALING & OBSERVABILITY (Days 15–21)
+Day 15 - Kubernetes Security Fundamentals
+Shared responsibility model
+Cluster attack surface
+Best practices overview
+Outcome: Security mindset
+
+Day 16 - RBAC (Authorization)
+Authentication vs Authorization
+Roles & ClusterRoles
+RoleBindings
+ServiceAccounts
+Hands-on: Lock down access
+
+Day 17 - Pod Security & Network Policies
+Pod Security Standards
+Security contexts
+NetworkPolicy basics
+Hands-on: Restrict pod communication
+
+Day 18 - Autoscaling in Kubernetes
+HPA
+VPA
+Cluster Autoscaler
+Metrics server
+Hands-on: Auto-scale an app
+
+Day 19 - Scheduling Deep Dive
+Scheduler workflow
+NodeSelectors
+Affinity / Anti-Affinity
+Taints & Tolerations
+Hands-on: Advanced scheduling
+
+Day 20 - Observability: Logging & Monitoring
+Logs vs metrics vs traces
+kubectl logs
+Prometheus & Grafana overview
+Kubernetes events
+Outcome: Debugging mindset
+
+Day 21 - Debugging & Troubleshooting
+CrashLoopBackOff
+ImagePullBackOff
+Pending Pods
+Node issues
+Hands-on: Real-world failures
+
+WEEK 4: PRODUCTION, CI/CD & ADVANCED TOPICS (Days 22–30)
+Day 22 - Helm (Package Manager for Kubernetes)
+Why Helm exists
+Chart structure
+Values.yaml
+Helm install/upgrade
+Hands-on: Deploy using Helm
+
+Day 23 - Kubernetes & CI/CD
+CI vs CD
+Image build pipelines
+Deployment automation
+GitOps introduction
+Outcome: End-to-end flow
+
+Day 24 - GitOps with Argo CD
+Git as source of truth
+Argo CD architecture
+Sync strategies
+Hands-on: GitOps deployment
+
+Day 25 - Advanced Deployment Strategies
+Canary with Argo Rollouts
+Blue-Green in Kubernetes
+Traffic shifting concepts
+Hands-on: Canary rollout
+
+Day 26 - StatefulSets Deep Dive
+Why StatefulSets exist
+Ordered deployment
+Stable network identities
+Hands-on: Stateful app
+
+Day 27 - DaemonSets & Jobs
+DaemonSet use cases
+Jobs vs CronJobs
+Batch workloads
+Hands-on: Node-level workloads
+
+Day 28 - Cost Optimization in Kubernetes
+Over-provisioning problems
+Resource requests/limits
+Spot instances
+Node optimization concepts
+Outcome: Production realism
+
+Day 29 - Kubernetes in the Cloud (EKS/GKE/AKS)
+Managed Kubernetes architecture
+Control plane management
+Add-ons
+Security considerations
+Outcome: Cloud-native understanding
+
+Day 30 - Kubernetes in Real Life (Wrap-Up)
+Common mistakes
+Design best practices
+How Kubernetes is used in real companies
+Learning roadmap
+CNCF ecosystem overview
+Outcome: Confident Kubernetes practitioner
+
+
+
